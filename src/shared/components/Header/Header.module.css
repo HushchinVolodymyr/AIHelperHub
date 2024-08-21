@@ -1,8 +1,22 @@
-﻿.container {
+﻿.header {
     height: 60px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.iconOpen {
+    display: none;
+}
+
+.iconClose {
+    display: none;
 }
 
 .link {
@@ -21,5 +35,40 @@
 @media screen and (max-width: 511px) {
     .link {
         width: 80px;
+    }
+}
+
+@media  screen and (max-width: 425px) {
+    .container {
+        display: none;
+    }
+    
+    .header {
+        justify-content: flex-end;
+    }
+    
+    .iconOpen {
+        display: block;
+        padding-right: 10px;
+        font-size: 50px;
+    }
+    
+    .iconClose {
+        display: block;
+        font-size: 50px;
+    }
+    
+    .burgerMenu {
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgb(var(--background-additional-rgb));
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 3;
     }
 }
