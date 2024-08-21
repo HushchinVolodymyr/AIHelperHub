@@ -44,7 +44,7 @@ const FourthBlock = () => {
     ]
 
     return (<div className={styles.container} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <h1>Key functions that the AI system will perform include</h1>
+        <h1 style={{textAlign: 'center'}}>Key functions that the AI system will perform include</h1>
         <UICardList props={data}/>
     </div>);
 };
