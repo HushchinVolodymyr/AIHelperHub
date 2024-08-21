@@ -5,7 +5,6 @@ import UICard from "@/shared/components/UI/UICard/UICard";
 
 const UiCardList = (data) => {
     const cardsContainerRef = useRef(null);
-    let scrollTimeout = null;
 
     useEffect(() => {
         const handleWheel = (event) => {

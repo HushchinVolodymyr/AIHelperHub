@@ -15,7 +15,7 @@
 }
 
 .description {
-    width: 930px;
+    max-width: 900px;
     font-weight: var(--font-semi-bold);
     font-size: 14px;
     text-align: center;

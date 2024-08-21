@@ -29,21 +29,22 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 50px;
+    gap: 40px;
     top: 0;
     z-index: 2;
+    padding: 10px;
 }
 
 .mainText {
     width: 265px;
-    height: 80px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0; /* Удаляем отступы по умолчанию */
+    font-size: 25px;
+    margin: 0;
     text-align: center;
 }
 
 .description {
-
 }

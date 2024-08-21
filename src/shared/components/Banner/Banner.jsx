@@ -10,12 +10,17 @@ const Banner = () => {
             <Image
                 src={BannerImg}
                 alt="Banner"
-                className={styles.imgContainer}
+                className={styles.imgContainerPC}
                 priority='height'
-                width={1000}
-                height={300}
             ></Image>
             <div className={styles.overlay}/>
+
+            <Image
+                src={BannerImg}
+                alt="Banner"
+                className={styles.imgContainerM}
+                priority='height'
+            ></Image>
             
             <div className={styles.textContainer}>
                 <h1 className={styles.mainText}>AIHelperHub</h1>

@@ -11,3 +11,15 @@
     font-size: 20px;
     font-weight: var(--font-medium);
 }
+
+@media screen and (max-width: 1000px) {
+    .link {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .link {
+        width: 80px;
+    }
+}
