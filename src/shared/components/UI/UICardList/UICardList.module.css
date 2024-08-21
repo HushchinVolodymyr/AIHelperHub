@@ -1,0 +1,17 @@
+﻿.cardsContainer {
+    padding: 20px 250px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.cardsContainer::-webkit-scrollbar {
+    display: none;
+}
