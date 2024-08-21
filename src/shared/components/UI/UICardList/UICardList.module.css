@@ -1,10 +1,11 @@
 ﻿.cardsContainer {
-    padding: 20px 250px;
+    padding: 20px 210px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 50px;
+    max-width: 1400px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
@@ -37,7 +38,6 @@
     .cardsContainer {
         padding: 20px 30px;
         gap: 30px;
-        width: 100%;
         mask-image: none;
     }
 }
