@@ -1,9 +1,10 @@
-import Banner from "@/shared/components/Banner/Banner";
-import FirstBlock from "@/shared/components/FirstBlock/FirstBlock";
-import SecondBlock from "@/shared/components/SecondBlock/SecondBlock";
-import ThirdBlock from "@/shared/components/ThirdBlock/ThirdBlock";
-import FourthBlock from "@/shared/components/FourthBlock/FourthBlock";
-import FifthBlock from "@/shared/components/FifthBlock/FifthBlock";
+import Banner from "@/shared/components/HomePageCompnents/Banner/Banner";
+import FirstBlock from "@/shared/components/HomePageCompnents/FirstBlock/FirstBlock";
+import SecondBlock from "@/shared/components/HomePageCompnents/SecondBlock/SecondBlock";
+import ThirdBlock from "@/shared/components/HomePageCompnents/ThirdBlock/ThirdBlock";
+import FourthBlock from "@/shared/components/HomePageCompnents/FourthBlock/FourthBlock";
+import FifthBlock from "@/shared/components/HomePageCompnents/FifthBlock/FifthBlock";
+import SixthBlock from "@/shared/components/HomePageCompnents/SixthBlock/SixthBlock";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <ThirdBlock/>
     <FourthBlock/>
     <FifthBlock/>
+    <SixthBlock/>
   </main>
   );
 }

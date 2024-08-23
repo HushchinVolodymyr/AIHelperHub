@@ -1,13 +1,13 @@
 ﻿import React from 'react';
-import styles from "@/shared/components/SecondBlock/SecondBlock.module.css";
+import styles from "./FourthBlock.module.css";
 import UICardList from "@/shared/components/UI/UICardList/UICardList";
 
-import Image1 from '../../../assets/FourthBlock/1.jpg'
-import Image2 from '../../../assets/FourthBlock/2.jpg'
-import Image3 from '../../../assets/FourthBlock/3.jpg'
-import Image4 from '../../../assets/FourthBlock/4.jpg'
-import Image5 from '../../../assets/FourthBlock/5.jpg'
-import Image6 from '../../../assets/FourthBlock/6.jpg'
+import Image1 from '/src/assets/FourthBlock/1.jpg'
+import Image2 from '/src/assets/FourthBlock/2.jpg'
+import Image3 from '/src/assets/FourthBlock/3.jpg'
+import Image4 from '/src/assets/FourthBlock/4.jpg'
+import Image5 from '/src/assets/FourthBlock/5.jpg'
+import Image6 from '/src/assets/FourthBlock/6.jpg'
 
 const FourthBlock = () => {
     const data = [
