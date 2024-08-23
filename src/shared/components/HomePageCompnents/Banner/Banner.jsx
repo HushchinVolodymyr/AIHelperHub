@@ -14,13 +14,6 @@ const Banner = () => {
                 priority='height'
             ></Image>
             <div className={styles.overlay}/>
-
-            <Image
-                src={BannerImg}
-                alt="Banner"
-                className={styles.imgContainerM}
-                priority='height'
-            ></Image>
             
             <div className={styles.textContainer}>
                 <h1 className={styles.mainText}>AIHelperHub</h1>
