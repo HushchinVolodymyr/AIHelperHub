@@ -1,0 +1,19 @@
+﻿.container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.darkIcon {
+    font-size: 30px;
+    transition: .3s ease;
+    transform: rotate(-45deg) translateY(5px);
+    
+}
+
+.lightIcon {
+    font-size: 30px;
+    transition: .3s ease;
+}

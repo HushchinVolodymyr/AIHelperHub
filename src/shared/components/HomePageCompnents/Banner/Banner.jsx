@@ -11,7 +11,7 @@ const Banner = () => {
                 src={BannerImg}
                 alt="Banner"
                 className={styles.imgContainerPC}
-                priority='height'
+                priority
             ></Image>
             <div className={styles.overlay}/>
             

@@ -1,6 +1,7 @@
 ﻿.card {
     position: relative;
     transition: .5s ease-in-out;
+    color: #fff;
 }
 
 .card:hover {
