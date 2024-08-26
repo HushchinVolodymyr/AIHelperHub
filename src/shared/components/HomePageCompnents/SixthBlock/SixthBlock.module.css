@@ -32,6 +32,7 @@
     border-radius: 20px;
     font-weight: var(--font-medium);
     font-size: 24px;
+    color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: .3s ease-in-out;

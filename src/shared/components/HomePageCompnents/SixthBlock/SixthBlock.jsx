@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import styles from './SixthBlock.module.css'
 import {MdArrowOutward} from "react-icons/md";
+import Link from "next/link";
 
 const SixthBlock = () => {
     return (
@@ -9,7 +10,7 @@ const SixthBlock = () => {
             <p className={styles.description}>Help desk automation using artificial intelligence promises to
                 significantly improve operational
                 efficiency and customer experience, which will be a key competitive advantage for your company.</p>
-            <button className={styles.btn}>Try<MdArrowOutward className={styles.icon}/></button>
+            <Link href='/chat' className={styles.btn}>Try<MdArrowOutward className={styles.icon}/></Link>
         </div>
     );
 };

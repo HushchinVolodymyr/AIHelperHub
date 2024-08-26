@@ -3,6 +3,7 @@ import BannerImg from '@/assets/banner.jpg'
 import Image from "next/image";
 import styles from "./Banner.module.css";
 import {MdArrowOutward} from "react-icons/md";
+import Link from "next/link";
 
 const Banner = () => {
     return (
@@ -19,7 +20,7 @@ const Banner = () => {
                 <h1 className={styles.mainText}>AIHelperHub</h1>
                 <h2 className={styles.description}>Optimizing support work and improving communication with the client
                     through the introduction of AI Assistant</h2>
-                <button className={styles.btn}>Try<MdArrowOutward className={styles.icon}/></button>
+                <Link href='/chat' className={styles.btn}>Try<MdArrowOutward className={styles.icon}/></Link>
             </div>
         </div>
     );

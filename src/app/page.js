@@ -6,7 +6,8 @@ import FourthBlock from "@/shared/components/HomePageCompnents/FourthBlock/Fourt
 import FifthBlock from "@/shared/components/HomePageCompnents/FifthBlock/FifthBlock";
 import SixthBlock from "@/shared/components/HomePageCompnents/SixthBlock/SixthBlock";
 
-export default function Home() {
+
+export default function Home({data}) {
   return (
   <main style={{ width: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <Banner/>

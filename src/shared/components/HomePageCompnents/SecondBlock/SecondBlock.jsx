@@ -32,6 +32,7 @@ const SecondBlock = () => {
         }
     ]
     
+    
     return (
         <div className={styles.container} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <h1>Problems</h1>
