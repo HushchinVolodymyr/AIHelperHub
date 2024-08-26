@@ -1,22 +1,22 @@
-import Banner from "@/shared/components/HomePageCompnents/Banner/Banner";
-import FirstBlock from "@/shared/components/HomePageCompnents/FirstBlock/FirstBlock";
-import SecondBlock from "@/shared/components/HomePageCompnents/SecondBlock/SecondBlock";
-import ThirdBlock from "@/shared/components/HomePageCompnents/ThirdBlock/ThirdBlock";
-import FourthBlock from "@/shared/components/HomePageCompnents/FourthBlock/FourthBlock";
-import FifthBlock from "@/shared/components/HomePageCompnents/FifthBlock/FifthBlock";
-import SixthBlock from "@/shared/components/HomePageCompnents/SixthBlock/SixthBlock";
+import Banner from "@/shared/components/HomePageCompnents/1.Banner/Banner";
+import BenefitsBlock from "@/shared/components/HomePageCompnents/6.BenefitsBlock/BenefitsBlock";
+import OverallBlock from "@/shared/components/HomePageCompnents/7.OverallBlock/OverallBlock";
+import BusinessCaseBlock from "@/shared/components/HomePageCompnents/2.BusinessCaseBlock/BusinessCaseBlock";
+import ProblemsBlock from "@/shared/components/HomePageCompnents/3.ProblemsBlock/ProblemsBlock";
+import WhatWeDoBlock from "@/shared/components/HomePageCompnents/4.WhatWeDoBlock/WhatWeDoBlock";
+import KeyFunctionBlock from "@/shared/components/HomePageCompnents/5.KeyFunctionBlock/KeyFunctionBlock";
 
 
-export default function Home({data}) {
+export default function Home() {
   return (
   <main style={{ width: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <Banner/>
-    <FirstBlock/>
-    <SecondBlock/>
-    <ThirdBlock/>
-    <FourthBlock/>
-    <FifthBlock/>
-    <SixthBlock/>
+    <BusinessCaseBlock/>
+    <ProblemsBlock/>
+    <WhatWeDoBlock/>
+    <KeyFunctionBlock/>
+    <BenefitsBlock/>
+    <OverallBlock/>
   </main>
   );
 }

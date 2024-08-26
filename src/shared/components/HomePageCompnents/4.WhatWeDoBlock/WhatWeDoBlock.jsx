@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import styles from './ThirdBlock.module.css'
+import styles from './WhatWeDoBlock.module.css'
 
-const ThirdBlock = () => {
+const WhatWeDoBlock = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.mainText}>What we do</h1>
@@ -13,4 +13,4 @@ const ThirdBlock = () => {
     );
 };
 
-export default ThirdBlock;
+export default WhatWeDoBlock;

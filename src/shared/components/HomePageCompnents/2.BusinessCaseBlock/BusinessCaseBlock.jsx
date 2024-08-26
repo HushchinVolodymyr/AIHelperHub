@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import styles from './FirstBlock.module.css'
+import styles from './BusinessCaseBlock.module.css'
 
-const FirstBlock = () => {
+const BusinessCaseBlock = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.mainText}>Business case</h1>
@@ -15,4 +15,4 @@ const FirstBlock = () => {
     );
 };
 
-export default FirstBlock;
+export default BusinessCaseBlock;

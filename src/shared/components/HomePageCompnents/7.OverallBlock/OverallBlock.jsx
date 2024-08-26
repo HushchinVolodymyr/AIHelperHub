@@ -1,9 +1,9 @@
 ﻿import React from 'react';
-import styles from './SixthBlock.module.css'
+import styles from './OverallBlock.module.css'
 import {MdArrowOutward} from "react-icons/md";
 import Link from "next/link";
 
-const SixthBlock = () => {
+const OverallBlock = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.mainText}>Overall</h1>
@@ -15,4 +15,4 @@ const SixthBlock = () => {
     );
 };
 
-export default SixthBlock;
+export default OverallBlock;

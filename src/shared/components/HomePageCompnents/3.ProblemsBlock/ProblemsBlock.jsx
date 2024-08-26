@@ -1,14 +1,14 @@
 ﻿import React from 'react';
-import styles from './SecondBlock.module.css'
+import styles from './ProblemsBlock.module.css'
 
-import Image1 from '/src/assets/SecondBlock/1.jpg'
-import Image2 from '/src/assets/SecondBlock/2.jpg'
-import Image3 from '/src/assets/SecondBlock/3.jpg'
-import Image4 from '/src/assets/SecondBlock/4.jpg'
+import Image1 from '/public/assets/SecondBlock/1.jpg'
+import Image2 from '/public/assets/SecondBlock/2.jpg'
+import Image3 from '/public/assets/SecondBlock/3.jpg'
+import Image4 from '/public/assets/SecondBlock/4.jpg'
 
 import UICardList from "@/shared/components/UI/UICardList/UICardList";
 
-const SecondBlock = () => {
+const ProblemsBlock = () => {
     const data = [
         {
             img: Image1,
@@ -43,4 +43,4 @@ const SecondBlock = () => {
 
 
 
-export default SecondBlock;
+export default ProblemsBlock;

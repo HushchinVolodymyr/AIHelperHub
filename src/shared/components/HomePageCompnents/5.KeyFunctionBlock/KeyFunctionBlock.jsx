@@ -1,15 +1,15 @@
 ﻿import React from 'react';
-import styles from "./FourthBlock.module.css";
+import styles from "./KeyFunctionBlock.module.css";
 import UICardList from "@/shared/components/UI/UICardList/UICardList";
 
-import Image1 from '/src/assets/FourthBlock/1.jpg'
-import Image2 from '/src/assets/FourthBlock/2.jpg'
-import Image3 from '/src/assets/FourthBlock/3.jpg'
-import Image4 from '/src/assets/FourthBlock/4.jpg'
-import Image5 from '/src/assets/FourthBlock/5.jpg'
-import Image6 from '/src/assets/FourthBlock/6.jpg'
+import Image1 from '/public/assets/FourthBlock/1.jpg'
+import Image2 from '/public/assets/FourthBlock/2.jpg'
+import Image3 from '/public/assets/FourthBlock/3.jpg'
+import Image4 from '/public/assets/FourthBlock/4.jpg'
+import Image5 from '/public/assets/FourthBlock/5.jpg'
+import Image6 from '/public/assets/FourthBlock/6.jpg'
 
-const FourthBlock = () => {
+const KeyFunctionBlock = () => {
     const data = [
         {
             img: Image1,
@@ -49,4 +49,4 @@ const FourthBlock = () => {
     </div>);
 };
 
-export default FourthBlock;
+export default KeyFunctionBlock;

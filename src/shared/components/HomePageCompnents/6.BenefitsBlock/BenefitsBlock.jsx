@@ -1,10 +1,10 @@
 ﻿import React from 'react';
-import styles from './FifthBlock.module.css';
+import styles from './BenefitsBlock.module.css';
 import {FaMoneyBillTrendUp, FaPeopleGroup} from "react-icons/fa6";
 import {CiTimer} from "react-icons/ci";
 import {MdCurrencyExchange, MdEmojiPeople} from "react-icons/md";
 
-const FifthBlock = () => {
+const BenefitsBlock = () => {
     return (
         <div className={styles.container}>
             <h1>Benefits of automation</h1>
@@ -60,4 +60,4 @@ const FifthBlock = () => {
     );
 };
 
-export default FifthBlock;
+export default BenefitsBlock;

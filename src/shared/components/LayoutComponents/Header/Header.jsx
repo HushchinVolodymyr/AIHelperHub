@@ -40,9 +40,9 @@ const Header = () => {
                         onClick={burgerMenuSwitch}
                     />
                     <div style={{display: "flex", flexDirection: 'column', marginTop: 10, gap: 10}}>
-                        <Link href="/" className={styles.link}>Home</Link>
-                        <Link href="/" className={styles.link}>About</Link>
-                        <Link href="/" className={styles.link}>Contact</Link>
+                        <Link href="/public" className={styles.link}>Home</Link>
+                        <Link href="/public" className={styles.link}>About</Link>
+                        <Link href="/public" className={styles.link}>Contact</Link>
                     </div>
                 </div>
             }
