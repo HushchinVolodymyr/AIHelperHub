@@ -9,16 +9,17 @@ import WhatWeDoBlock from "@/shared/components/HomePageCompnents/4.WhatWeDoBlock
 import KeyFunctionBlock from "@/shared/components/HomePageCompnents/5.KeyFunctionBlock/KeyFunctionBlock";
 
 
+
 export default function Home() {
-  return (
-  <main className={styles.container}>
-    <Banner/>
-    <BusinessCaseBlock/>
-    <ProblemsBlock/>
-    <WhatWeDoBlock/>
-    <KeyFunctionBlock/>
-    <BenefitsBlock/>
-    <OverallBlock/>
-  </main>
-  );
+    return (
+        <main className={styles.container}>
+            <Banner/>
+            <BusinessCaseBlock/>
+            <ProblemsBlock/>
+            <WhatWeDoBlock/>
+            <KeyFunctionBlock/>
+            <BenefitsBlock/>
+            <OverallBlock/>
+        </main>
+    );
 }

@@ -1,3 +1,33 @@
 ﻿.container {
-    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(var(--background-additional-rgb));
+    height: 60px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.textInput {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(var(--font-color-rgb));
+    font-size: 24px;
+    text-indent: 10px;
+}
+
+.sendBtn {
+    background-color: rgb(var(--background-rgb));
+    color: rgb(var(--font-color-rgb));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 24px;
+    border-radius: 15px;
 }
