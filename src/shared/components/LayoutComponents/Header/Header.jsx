@@ -39,10 +39,10 @@ const Header = () => {
                         className={styles.iconClose}
                         onClick={burgerMenuSwitch}
                     />
-                    <div style={{display: "flex", flexDirection: 'column', marginTop: 10, gap: 10}}>
-                        <Link href="/public" className={styles.link}>Home</Link>
-                        <Link href="/public" className={styles.link}>About</Link>
-                        <Link href="/public" className={styles.link}>Contact</Link>
+                    <div className={styles.burgerMenuLinks}>
+                        <Link href="/" className={styles.link}>Home</Link>
+                        <Link href="/" className={styles.link}>About</Link>
+                        <Link href="tel:+380930860580" className={styles.link}>Contact</Link>
                     </div>
                 </div>
             }

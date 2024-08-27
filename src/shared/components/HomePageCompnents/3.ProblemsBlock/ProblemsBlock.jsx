@@ -34,7 +34,7 @@ const ProblemsBlock = () => {
     
     
     return (
-        <div className={styles.container} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className={styles.container}>
             <h1>Problems</h1>
             <UICardList props={data}/>
         </div>

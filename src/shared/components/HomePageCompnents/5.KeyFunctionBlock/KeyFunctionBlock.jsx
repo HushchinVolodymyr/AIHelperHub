@@ -43,7 +43,7 @@ const KeyFunctionBlock = () => {
         }
     ]
 
-    return (<div className={styles.container} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    return (<div className={styles.container}>
         <h1 style={{textAlign: 'center'}}>Key functions that the AI system will perform include</h1>
         <UICardList props={data}/>
     </div>);

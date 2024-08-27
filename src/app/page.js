@@ -1,3 +1,5 @@
+import styles from './page.module.css'
+
 import Banner from "@/shared/components/HomePageCompnents/1.Banner/Banner";
 import BenefitsBlock from "@/shared/components/HomePageCompnents/6.BenefitsBlock/BenefitsBlock";
 import OverallBlock from "@/shared/components/HomePageCompnents/7.OverallBlock/OverallBlock";
@@ -9,7 +11,7 @@ import KeyFunctionBlock from "@/shared/components/HomePageCompnents/5.KeyFunctio
 
 export default function Home() {
   return (
-  <main style={{ width: "100%", display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <main className={styles.container}>
     <Banner/>
     <BusinessCaseBlock/>
     <ProblemsBlock/>

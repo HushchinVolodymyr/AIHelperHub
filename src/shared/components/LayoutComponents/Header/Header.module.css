@@ -33,6 +33,13 @@
     .link {
         width: 100px;
     }
+    
+    .burgerMenuLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 511px) {
