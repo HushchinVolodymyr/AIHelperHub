@@ -16,7 +16,6 @@ export default function RootLayout({children}) {
         <body className={montserrat.className}>
         <Header/>
         {children}
-        <footer style={{height: 100, padding: 30, width: '100%'}}></footer>
         </body>
         </html>
     );
