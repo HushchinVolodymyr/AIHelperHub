@@ -22,6 +22,7 @@
 .sendBtn {
     background-color: rgb(var(--background-rgb));
     color: rgb(var(--font-color-rgb));
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
