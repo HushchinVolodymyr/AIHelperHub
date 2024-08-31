@@ -9,6 +9,42 @@
     border-radius: 20px;
 }
 
+.dropDownContainer {
+    position: relative;
+    min-width: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownToggle {
+    background-color: transparent;
+    border: none;
+    color: rgb(var(--font-color-rgb));
+    font-size: 20px;
+    align-self: center;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.dropDownToggle:hover {
+    scale: 1.1;
+}
+
+.dropDownMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(var(--background-additional-rgb));
+    bottom: 45px;
+    left: -5px;
+}
+
 .textInput {
     background-color: transparent;
     width: 100%;
@@ -17,6 +53,7 @@
     color: rgb(var(--font-color-rgb));
     font-size: 24px;
     text-indent: 10px;
+    transition: .3s ease-in-out;
 }
 
 .sendBtn {
@@ -32,4 +69,5 @@
     border: none;
     font-size: 24px;
     border-radius: 15px;
+    transition: .3s ease-in-out;
 }

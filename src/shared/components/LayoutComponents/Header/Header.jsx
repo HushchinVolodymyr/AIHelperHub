@@ -1,53 +1,65 @@
 ﻿'use client'
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styles from './Header.module.css';
 import Link from "next/link";
 
 import {CiMenuBurger} from "react-icons/ci";
 import {IoMdClose} from "react-icons/io";
+
 import UIThemeToggle from "@/shared/components/UI/UIThemeToggle/UIThemeToggle";
 
 const Header = () => {
-    const [burgerMenu, setBurgerMenu] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
+    const dropdownRef = useRef(null)
+    
 
-    const burgerMenuSwitch = () => {
-        setBurgerMenu(!burgerMenu);
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setDropdown(false);
+        }
     }
 
-    return (
-        <header className={styles.header}>
-            <div className={styles.container}>
-                <div/>
-                <nav className={styles.navContainer}>
-                    <Link href="/" className={styles.link}>Home</Link>
-                    <Link href="/" className={styles.link}>About</Link>
-                    <Link href="tel:+380930860580" className={styles.link}>Contact</Link>
-                </nav>
-                <UIThemeToggle/>
-            </div>
-            {!burgerMenu ?
-                <div className={styles.burgerMenuSwitch}>
-                    <UIThemeToggle/>
-                    <CiMenuBurger
-                        className={styles.iconOpen}
-                        onClick={burgerMenuSwitch}
-                    />
-                </div>
-                :
-                <div className={styles.burgerMenu}>
-                    <IoMdClose
-                        className={styles.iconClose}
-                        onClick={burgerMenuSwitch}
-                    />
-                    <div className={styles.burgerMenuLinks}>
-                        <Link href="/" className={styles.link}>Home</Link>
-                        <Link href="/" className={styles.link}>About</Link>
-                        <Link href="tel:+380930860580" className={styles.link}>Contact</Link>
-                    </div>
-                </div>
-            }
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
 
-        </header>
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    return (
+        <div className={styles.container}>
+            <div className={styles.headerContainerPC}>
+                <div></div>
+                <nav className={styles.navContainer}>
+                    <Link className={styles.link} href='/'>Home</Link>
+                    <Link className={styles.link} href='/'>About</Link>
+                    <Link className={styles.link} href='/'>Contact</Link>
+                </nav>
+                <div>
+                    <UIThemeToggle/>
+                </div>
+            </div>
+            <div className={styles.headerContainerM} ref={dropdownRef}>
+                <div className={styles.startHeader}>
+                    <UIThemeToggle/>
+                    <button
+                        className={styles.dropdownToggle}
+                        onClick={() => setDropdown(!dropdown)}
+                    >
+                        {!dropdown ? <CiMenuBurger/> : <IoMdClose/>}
+                    </button>
+                    {dropdown && (
+                        <div className={styles.dropdownMenu}>
+                            <Link className={styles.link} href='/'>Home</Link>
+                            <Link className={styles.link} href='/'>About</Link>
+                            <Link className={styles.link} href='/'>Contact</Link>
+                        </div>
+                    )}
+                </div>
+
+            </div>
+        </div>
     );
 };
 

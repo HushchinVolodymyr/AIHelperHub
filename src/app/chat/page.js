@@ -4,11 +4,13 @@ import InputSendBlock from "@/shared/components/ChatComponents/InputSendBlock/In
 import styles from './page.module.css'
 import ChatBlock from "@/shared/components/ChatComponents/ChatBlock/ChatBlock";
 import axios from "axios";
+import {MessageDto} from "@/DTOs/messageDto";
 
 
 const Chat = () => {
     const [message, setMessage] = useState('')
     const [chatHistory, setChatHistory] = useState([])
+    const [ selectOptionDropdown, setSelectOptionDropdown] = useState(null)
 
     const getMessage = (newMessage) => {
         setMessage(newMessage);
@@ -20,31 +22,21 @@ const Chat = () => {
 
     const sendRequest = async () => {
         if (message.trim() !== "") {
-            const newMessage = {
-                id: chatHistory.length + 1,
-                messageType: "user",
-                message: message
-            };
+            const newMessage = new MessageDto(chatHistory.length + 1, 'user', message); 
             
             updateChatHistory(newMessage);
 
             try {
-                const response = await axios.post('http://127.0.0.1:8000', {
-                    message: message  
-                });
+                const response = await axios.post(process.env.NEXT_PUBLIC_API_URL, newMessage)
+                
+                if (response.status === 200) {
+                    const botMessage = new MessageDto(chatHistory.length + 2, 
+                        'bot', response.data);
 
-                console.log(response.data);
-
-                const botMessage = {
-                    id: chatHistory.length + 1,
-                    messageType: "bot",
-                    message: response.data  
-                };
-
-                updateChatHistory(botMessage);
+                    updateChatHistory(botMessage);
+                }
 
                 setMessage('');
-
             } catch (error) {
                 console.log(error);
             }
