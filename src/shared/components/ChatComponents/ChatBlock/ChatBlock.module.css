@@ -1,26 +1,78 @@
 ﻿.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 18px;
+    mask-image: linear-gradient(to top, transparent, black 5%, black 95%, transparent);
+    mask-repeat: no-repeat;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.chatSeparator {
+    min-height: 15px;
+}
+
+.upSeparator {
+    height: 90%;
+    max-height: 90%;
+}
+
+.messageContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     gap: 10px;
     height: 100%;
     width: 100%;
-    padding: 50px 10px;
+    max-width: 1000px;
+    font-size: 18px;
 }
 
 .userMessage {
-    padding: 10px;
+    align-self: flex-end;
     background-color: rgb(var(--background-additional-rgb));
     border-radius: 20px;
-    align-self: flex-end;
+    max-width: 90%;
+    padding: 10px 15px;
 }
 
 .botMessage {
-    padding: 10px;
     display: flex;
+    flex-direction: row;
     gap: 10px;
+    max-width: 90%;
+    padding: 10px;
 }
 
-.botIcon {
+.botMessageIcon {
+    min-width: 40px;
+    height: 40px;
     font-size: 20px;
+}
+
+.scrollDownButton {
+    position: fixed; 
+    bottom: 100px; 
+    background-color: rgb(var(--background-additional-rgb)); 
+    color: rgb(var(--font-color-rgb));
+    border: none; 
+    border-radius: 50%; 
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 11; 
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

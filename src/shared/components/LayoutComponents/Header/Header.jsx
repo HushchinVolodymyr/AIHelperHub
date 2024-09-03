@@ -47,7 +47,7 @@ const Header = () => {
                         className={styles.dropdownToggle}
                         onClick={() => setDropdown(!dropdown)}
                     >
-                        {!dropdown ? <CiMenuBurger/> : <IoMdClose/>}
+                        {dropdown ? <IoMdClose/> : <CiMenuBurger/>}
                     </button>
                     {dropdown && (
                         <div className={styles.dropdownMenu}>

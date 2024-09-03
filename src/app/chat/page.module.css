@@ -6,9 +6,9 @@
     padding: 5px;
     max-width: 900px;
     width: 100%;
-    max-height: 90vh;
     height: 100%;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .container::-webkit-scrollbar {

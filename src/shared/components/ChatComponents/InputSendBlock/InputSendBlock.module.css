@@ -41,8 +41,26 @@
     padding: 10px;
     border-radius: 20px;
     background-color: rgb(var(--background-additional-rgb));
-    bottom: 45px;
+    bottom: 50px;
     left: -5px;
+    
+}
+
+.dropDownItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropDownItem:hover {
+    background-color: rgb(var(--background-rgb));
+    border-radius: 10px;
+}
+
+.dropDownItemSelected {
+    padding: 5px;
+    background-color: rgb(var(--background-rgb));
+    border-radius: 10px;
+    scale: 1.03;
 }
 
 .textInput {

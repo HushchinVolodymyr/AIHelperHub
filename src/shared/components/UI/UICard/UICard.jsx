@@ -9,7 +9,7 @@ const UICard = (item) => {
             <div className={styles.overlay}/>
             <div className={styles.textContainer}>
                 <h1 className={styles.mainText}>{item.props.text}</h1>
-                <p className={styles.description}>{item.props.description}</p>
+                <p>{item.props.description}</p>
             </div>
         </div>
     );
