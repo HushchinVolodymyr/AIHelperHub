@@ -1,6 +1,6 @@
 ﻿export class RequestDataDto {
-    constructor(chatExample, chatHistory) {
+    constructor(chatExample, message) {
         this.chatExample = chatExample;
-        this.chatHistory = chatHistory;
+        this.message = message;
     }
 }

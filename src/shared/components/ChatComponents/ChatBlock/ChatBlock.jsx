@@ -44,6 +44,10 @@ const ChatBlock = ({messages}) => {
             }
         };
     }, [messages]);
+
+    const formatText = (text) => {
+        return text.replace(/\n/g, '<br/>');
+    };
     
     return (
         <div
@@ -61,7 +65,7 @@ const ChatBlock = ({messages}) => {
                     >
                         {!message.messageType ? <GoDependabot className={styles.botMessageIcon}/> : null}
 
-                        <p>{message.message}</p>
+                        <p dangerouslySetInnerHTML={{__html: formatText(message.message)}}/>
                     </div>
                 ))}
                 <div className={styles.chatSeparator}></div>
