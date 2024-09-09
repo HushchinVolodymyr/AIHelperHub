@@ -58,8 +58,6 @@ const Chat = () => {
                     if (response.status === 200) {
                         const botMessage = new Message(response.data.data.id,
                             response.data.data.messageType, response.data.data.message);
-
-                        console.log(response.data.data.message);
                         
                         updateChatHistory(botMessage);
                     }
